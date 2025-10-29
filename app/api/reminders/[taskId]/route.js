@@ -5,8 +5,8 @@ import { google } from 'googleapis';
 import { createClient } from '@libsql/client';
 
 const dbClient = createClient({
-  url: process.env.TURSO_DATABASE_URL || "libsql://database-emerald-ball-vercel-icfg-dgpk6yup5ek0sjjg4h4yw1mb.aws-ap-south-1.turso.io",
-  authToken: process.env.TURSO_AUTH_TOKEN || "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9...",
+  url: process.env.TURSO_DATABASE_URL || "libsql://-emerald-ball-vercel-icfg-dgpk6yup5ek0sjjg4h4yw1mb.aws-ap-south-1.turso.io",
+  authToken: process.env.TURSO_AUTH_TOKEN || ".eyJpYXQiOjE3NTM0NTA5NzgsImlkIjoiNzQ0YzlkYmUtOWE5Yy00ZjU5LTlhOWItZWI3NzYxNGU5NzI1IiwicmlkIjoiODczY2U3ZDUtNzU4Yy00YWEyLTk3ZDAtNGFiOTAyMWU2MGEwIn0.D5o7wFhG2aO48CZCONaPXk81VA3G-5ozzXcF1EQbA_AJ2vfzaYlb4qBDNeIRawBT-UfID_m71QLNE_-lzmwXBQ",
 });
 
 // Helper function to get an authenticated Google API client
